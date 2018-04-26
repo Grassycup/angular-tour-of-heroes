@@ -1,4 +1,10 @@
 /* HeroSearch private styles */
+h2, h3, h4 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
 .search-result li {
   border-bottom: 1px solid gray;
   border-left: 1px solid gray;

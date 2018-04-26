@@ -4,12 +4,12 @@
     <span>id: </span>{{hero.id}}
   </div>
   <div>
-    <span class="ui-float-label">
+    <span class="ui-float-label margin-top-30">
       <input id="hero-name-input" type="text" [(ngModel)]="hero.name" pInputText />
       <label for="hero-name-input">Name</label>
     </span>
   </div>
 
-  <p-button label="save" (click)="save()"></p-button>
+  <p-button class="margin-top-30" label="save" (click)="save()"></p-button>
   <p-button label="go back" (click)="goBack()"></p-button>
 </div>
