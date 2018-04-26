@@ -1,18 +1,29 @@
 <h2>My Heroes</h2>
-<ul class="heroes">
-  <li *ngFor="let hero of heroes">
-    <a routerLink="/detail/{{hero.id}}">
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
-    </a>
-    <button class="delete" title="delete hero" (click)="delete(hero)">x</button>
-  </li>
-</ul>
+<p-dataView [value]="heroes">
+  <ng-template let-hero pTemplate="listItem">
+    <div class="ui-g border">
+      <div class="ui-g-12 ui-md-1">
+        <a routerLink="/detail/{{hero.id}}">
+          {{hero.id}}
+        </a>
+      </div>
+      <div class="ui-g-12 ui-md-10">
+        {{hero.name}}
+      </div>
+      <div class="ui-g-12 ui-md-1">
+        <p-button label="x" title="delete hero" (click)="delete(hero)"></p-button>
+      </div>
+    </div>
+  </ng-template>
+</p-dataView>
+
+
 <div>
-  <span class="ui-float-label">
+  <span class="ui-float-label margin-top-30">
     <input id="hero-name-input" type="text" #heroName pInputText />
     <label for="hero-name-input">Hero name</label>
+    <!-- (click) passes input value to add() and then clears the input -->
+    <p-button label="add" (click)="add(heroName.value); heroName.value=''">
+    </p-button>
   </span>
-  <!-- (click) passes input value to add() and then clears the input -->
-  <p-button label="add" (click)="add(heroName.value); heroName.value=''">
-  </p-button>
 </div>

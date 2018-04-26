@@ -10,6 +10,7 @@ import { PanelModule } from 'primeng/panel';
 import { CardModule } from 'primeng/card';
 import { InputTextModule } from 'primeng/inputtext';
 import { AutoCompleteModule } from 'primeng/autocomplete';
+import { DataViewModule } from 'primeng/dataview';
 
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
@@ -50,7 +51,8 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     PanelModule,
     CardModule,
     InputTextModule,
-    AutoCompleteModule
+    AutoCompleteModule,
+    DataViewModule
   ],
   providers: [HeroService, MessageService, InMemoryDataService],
   bootstrap: [AppComponent]

@@ -71,3 +71,12 @@ button.delete {
   background-color: gray !important;
   color: white;
 }
+
+/*.border {*/
+  /*border: #DDDDDD;*/
+  /*border-style: dashed;*/
+/*}*/
+
+.margin-top-30 {
+  margin-top: 30px;
+}
