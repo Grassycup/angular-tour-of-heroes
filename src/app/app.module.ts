@@ -7,6 +7,8 @@ import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AccordionModule } from 'primeng/accordion';
 import { PanelModule } from 'primeng/panel';
+import { CardModule } from 'primeng/card';
+import { InputTextModule } from 'primeng/inputtext';
 
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
@@ -44,7 +46,9 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     ButtonModule,
     BrowserAnimationsModule,
     AccordionModule,
-    PanelModule
+    PanelModule,
+    CardModule,
+    InputTextModule
   ],
   providers: [HeroService, MessageService, InMemoryDataService],
   bootstrap: [AppComponent]

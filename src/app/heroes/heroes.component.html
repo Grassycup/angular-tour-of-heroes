@@ -8,11 +8,11 @@
   </li>
 </ul>
 <div>
-  <label>Hero name:
-    <input #heroName />
-  </label>
+  <span class="ui-float-label">
+    <input id="hero-name-input" type="text" #heroName pInputText />
+    <label for="hero-name-input">Hero name</label>
+  </span>
   <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(heroName.value); heroName.value=''">
-    add
-  </button>
+  <p-button label="add" (click)="add(heroName.value); heroName.value=''">
+  </p-button>
 </div>
