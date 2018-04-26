@@ -9,6 +9,7 @@ import { AccordionModule } from 'primeng/accordion';
 import { PanelModule } from 'primeng/panel';
 import { CardModule } from 'primeng/card';
 import { InputTextModule } from 'primeng/inputtext';
+import { AutoCompleteModule } from 'primeng/autocomplete';
 
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
@@ -48,7 +49,8 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     AccordionModule,
     PanelModule,
     CardModule,
-    InputTextModule
+    InputTextModule,
+    AutoCompleteModule
   ],
   providers: [HeroService, MessageService, InMemoryDataService],
   bootstrap: [AppComponent]
